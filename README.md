@@ -60,17 +60,17 @@ Alternatively, you can download the repository as a ZIP file.
 
 2. **Navigate to the Project Directory**:
 
-```bash
-cd PlanningHub_CodeChallenge
+   ```bash
+   cd PlanningHub_CodeChallenge
 
 3. **Install Dependencies**: Make sure you have Python installed. Install the required libraries using:
 
-```bash
-pip install pandas
+   ```bash
+   pip install pandas
 
 4. **Run the Main Script**: Execute the main script to prepare the data and check planning permissions:
 
-```bash
-python main.py
+   ```bash
+   python main.py
 
-5. View Results: The results will be printed to the console. Alternatively this repository contains a Jupyter Notebook which shows the results (for demo purposes).
+5. **View Results**: The results will be printed to the console. Alternatively this repository contains a Jupyter Notebook which shows the results (for demo purposes).
