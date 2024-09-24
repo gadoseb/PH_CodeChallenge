@@ -51,11 +51,26 @@ The dataset is sourced from an Excel file with two sheets. The relevant sheet "D
 
 ## How to Use
 
-1. **Install Dependencies**: Ensure you have the required libraries installed. You can install them using:
+1. **Clone the Repository**:
+   Clone this repository to your local machine using:
    ```bash
-   pip install pandas
-2. **Prepare the Dataset**: Update the file path in `data_preparation.py` to point to your Excel file containing the planning data.
+   git clone https://github.com/gadoseb/PlanningHub_CodeChallenge.git
 
-3. **Run the Application**: Execute `main.py` to prepare the dataset and check for planning permissions. The output will indicate whether planning permission is required for each site.
+Alternatively, you can download the repository as a ZIP file.
 
-4. **View Results**: The results will be printed to the console, showing which sites require planning permission based on the defined criteria.
+2. **Navigate to the Project Directory**:
+
+```bash
+cd PlanningHub_CodeChallenge
+
+3. **Install Dependencies**: Make sure you have Python installed. Install the required libraries using:
+
+```bash
+pip install pandas
+
+4. **Run the Main Script**: Execute the main script to prepare the data and check planning permissions:
+
+```bash
+python main.py
+
+5. View Results: The results will be printed to the console. Alternatively this repository contains a Jupyter Notebook which shows the results (for demo purposes).
