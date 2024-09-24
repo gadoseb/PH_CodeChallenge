@@ -78,4 +78,4 @@ Alternatively, you can download the repository as a ZIP file.
 
 5. **View Results**: The results will be printed to the console. This repository contains a Jupyter Notebook which shows the results (for demo purposes).
 
-6. Remember to change the file path accordingly
+Remember to change the file path accordingly
