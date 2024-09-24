@@ -1,4 +1,3 @@
-# PlanningHub_CodeChallenge
 # Planning Permission Checker
 
 This project is designed to evaluate whether planning permission is required for erecting a face, gate, or wall based on a provided dataset. It processes the data and applies various criteria to determine the necessity of planning permission for different sites.
@@ -21,25 +20,34 @@ The project consists of three Python files:
 
 ## Dataset Structure
 
-The dataset is sourced from an Excel file with two sheets. The relevant sheet for this project contains the following structure:
+The dataset is sourced from an Excel file with two sheets. The relevant sheet "Diagram" for this project contains the following information:
 
-| Restrictions | Details                                           | 2U1 | 2U2 | 2U3 | 2U4 | 2U5 | 2U6 | 2U7 | 2U8 | 2U9 | 2A1 | 2A2 | 2A3 | 2A4 | 2A5 | 2A6 |
-|--------------|--------------------------------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| Location of gate, fence, wall or other means of enclosure | "adjacent to a highway used by vehicular traffic" | y   | y   | y   |     |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | gate, fence, wall or other means of enclosure face onto a property with a listed building | y |     |     | y   | y   | y   |
-| Height of gate, fence, wall or other means of enclosure | up to 1m                                      | y   | y   |     |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | above 1m                                      |     |     | y   |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | up to 2m                                      |     |     |     | y   | y   |     |
-|                                                        | above 2m                                      |     |     |     |     | y   |
-| Planning constraints                                   | Listed building                                | y   |     |     |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | Article 2(3) Land removing permitted development rights for the project | y |     |     |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | Article 2(4) Land                             |     | y   |     |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | Article 4 Directive removing the PD rights for the project |     |     | y |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | AONB                                          |     |     |     | y   |     |     |     |     |     |     |     |     |     |     |
-|                                                        | works affecting TPO                           |     |     |     |     |     | y   |     |     |     |     |     |     |     |     |
-| Other                                                 | Permitted development rights removed with previous planning | y   |     |     |     |     |     |     |     |     |     |     |     |     |     |
-|                                                        | New build property - restrictions applied     |     |     |     |     | y   |     |     |     |     |     |     |     |     |     |
-| Planning permission                                    | Planning Permission required                   | y   | y   | y   | y   | y   | y   | y   | y   | y   | n   | n   | y   | n   | n   | y   |
+1. **Universal Category**: 
+   - If the site falls into this category, planning permission is required.
+
+2. **Location of gate, fence, wall, or other means of enclosure**:
+   - If the structure is adjacent to a highway used by vehicular traffic.
+
+3. **Height of gate, fence, wall, or other means of enclosure**:
+   - Up to 1m: Planning permission may be required if other conditions are met.
+   - Above 1m: Planning permission is generally required.
+   - Up to 2m: Check other conditions to determine permission requirement.
+   - Above 2m: Planning permission is required.
+
+4. **Planning Constraints**:
+   - Listed building status.
+   - Article 2(3) for land removing permitted development rights.
+   - Article 2(4) for land.
+   - Article 4 Directive removing permitted development rights.
+   - Areas of Outstanding Natural Beauty (AONB).
+   - Works affecting Tree Preservation Orders (TPO).
+
+5. **Other Categories**:
+   - Permitted development rights removed by previous planning.
+   - New build property with restrictions applied.
+
+6. **Final Planning Permission Assessment**: 
+   - Based on the above conditions, the final output will indicate if planning permission is required for each site.
 
 ## How to Use
 
