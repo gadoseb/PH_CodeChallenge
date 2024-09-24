@@ -17,6 +17,9 @@ The project consists of three Python files:
 3. **main.py**: 
    - This is the entry point of the application. 
    - It orchestrates the execution of the data preparation and planning permission checking functions, providing a cohesive user experience.
+  
+4. **Demo.ipynb**:
+   - Demonstration Jupyter Notebook to quickly visualise the results of the challenge.
 
 ## Dataset Structure
 
@@ -73,4 +76,4 @@ Alternatively, you can download the repository as a ZIP file.
    ```bash
    python main.py
 
-5. **View Results**: The results will be printed to the console. Alternatively this repository contains a Jupyter Notebook which shows the results (for demo purposes).
+5. **View Results**: The results will be printed to the console. This repository contains a Jupyter Notebook which shows the results (for demo purposes).
